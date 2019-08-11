@@ -1,12 +1,14 @@
-var Notes = require('./models/notes');
-var Links = require('/models/links');
-var Images = require('./models/images');
+var Notes = require('../models/notes');
+var Links = require('../models/links');
+var Images = require('../models/images');
+var dateFormat = require('dateformat');
 
 exports.get_notes = (req,res)=>{
-
+var msg = req.query.msg;
     Notes.find({}).then(note=>{
       res.render('notes',{
-        note: notes
+        note: note,
+        msg : msg
       })
     });
 };
@@ -22,9 +24,7 @@ exports.add_notes = (req,res)=>{
   });
 
   newNotes.save().then(savedNotes =>{
-    res.redirect('/notes',{
-      msg: "Successfully Added"
-    });
+    res.redirect('notes/?msg='+"Successfully Added");
   }).catch(error =>{
     console.log('could not save data'+ error);
   });
