@@ -18,10 +18,13 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 var bodyParser = require('body-parser');
 var dateFormat = require('dateformat');
+const methodOverride = require('method-override');
+
 var now = new Date();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(methodOverride('_method'));
 
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');

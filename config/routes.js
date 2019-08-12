@@ -10,7 +10,8 @@ module.exports = function (app, passport) {
       //get,add,update and delete notes
     app.get('/notes',notes.get_notes);
     app.post('/notes',notes.add_notes);
-    app.put('/notes/:id',notes.update_note);
+    app.get('/notes/edit/:id',notes.edit_notes);
+    app.put('/notes/edit/:id',notes.update_note);
     app.delete('/notes/:id',notes.delete_note);
 
 }

@@ -5,10 +5,29 @@ var dateFormat = require('dateformat');
 
 exports.get_notes = (req,res)=>{
 var msg = req.query.msg;
-    Notes.find({}).then(note=>{
+  var perPage = 10
+    , page = Math.max(0, req.query.page) ;
+    if(req.query.page != '0' || req.query.page === undefined){
+      page = page-1;
+    }
+    Notes.find({}).limit(perPage)
+    .skip(perPage * page)
+    .then(note=>{
+
+      if(page=== 0){
+        page++;
+      }else{
+        page ++;
+      }
+      var next = page+1;
+      var previous = page-1;
+
       res.render('notes',{
         note: note,
-        msg : msg
+        msg : msg,
+        page:page,
+        next:next,
+        previous:previous
       })
     });
 };
@@ -31,6 +50,16 @@ exports.add_notes = (req,res)=>{
 
 
 };
+
+exports.edit_notes = (req,res,next)=>{
+
+    Notes.findOne({_id: req.params.id}).then(note=>{
+        res.render('notes',{
+          note:note
+        });
+    });
+
+}
 exports.update_note = (req,res)=>{
   Notes.findOne({_id: req.params.id}).then(note =>{
         note.name =  req.body.name;
