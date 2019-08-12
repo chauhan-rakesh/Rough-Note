@@ -54,20 +54,19 @@ exports.add_notes = (req,res)=>{
 exports.edit_notes = (req,res,next)=>{
 
     Notes.findOne({_id: req.params.id}).then(note=>{
-        res.render('notes',{
-          note:note
+        res.render('note_edit',{
+          note:note,
+          msg:undefined
         });
     });
 
 }
-exports.update_note = (req,res)=>{
+exports.update_note = (req,res,next)=>{
   Notes.findOne({_id: req.params.id}).then(note =>{
         note.name =  req.body.name;
         note.content = req.body.content;
         note.save(updatedNote =>{
-    res.redirect('/notes',{
-      msg: "Successfully Updated"
-    });
+    res.redirect('/notes/?msg='+"Successfully Updated");
   });
 });
 }
@@ -78,9 +77,7 @@ exports.delete_note = (req,res,next)=>{
 Notes.remove({_id: req.params.id})
 .then(result=>{
 
-        res.redirect('/note',{
-          msg:"Successfully Deleted"
-        });
+        res.redirect('/notes/?msg='+"Successfully Deleted");
       });
 
 

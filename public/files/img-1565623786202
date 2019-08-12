@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="353" height="127.553" viewBox="0 0 353 127.553">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.186" y1="0.396" x2="0.832" y2="0.351" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e8dfff"/>
+      <stop offset="1" stop-color="#d5e5f6"/>
+    </linearGradient>
+    <filter id="Path_201" x="0" y="0" width="353" height="127.553" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.128" y1="0.622" x2="0.89" y2="0.602" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2eec87"/>
+      <stop offset="1" stop-color="#49d473"/>
+    </linearGradient>
+    <filter id="Rectangle_43" x="183" y="69.553" width="164" height="51" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_201-2" x="0" y="0" width="353" height="127.553" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-3" x1="0.1" y1="0.088" x2="1.11" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ec2e62"/>
+      <stop offset="1" stop-color="#e95252"/>
+    </linearGradient>
+    <filter id="Rectangle_43-2" x="183" y="69.553" width="164" height="51" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-4" x1="0.17" y1="0.108" x2="0.869" y2="0.974" xlink:href="#linear-gradient-3"/>
+  </defs>
+  <g id="Refer_Now" data-name="Refer Now" transform="translate(-7 -810.447)">
+    <g id="Group_1449" data-name="Group 1449">
+      <g id="Group_1444" data-name="Group 1444">
+        <g id="Group_223" data-name="Group 223" transform="translate(3 162)">
+          <g id="Group_222" data-name="Group 222" transform="translate(-3)">
+            <g transform="matrix(1, 0, 0, 1, 7, 648.45)" filter="url(#Path_201)">
+              <path id="Path_201-3" data-name="Path 201" d="M6,0H329a5.777,5.777,0,0,1,6,5.524v98.506a5.777,5.777,0,0,1-6,5.524H6a5.777,5.777,0,0,1-6-5.524V5.524A5.777,5.777,0,0,1,6,0Z" transform="translate(9 6)" fill="url(#linear-gradient)"/>
+            </g>
+            <g transform="matrix(1, 0, 0, 1, 7, 648.45)" filter="url(#Rectangle_43)">
+              <rect id="Rectangle_43-3" data-name="Rectangle 43" width="146" height="33" rx="7" transform="translate(192 75.55)" fill="url(#linear-gradient-2)"/>
+            </g>
+            <text id="REFER_NOW-2" data-name="REFER NOW" transform="translate(230 746)" fill="#fff" font-size="13" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">REFER NOW</tspan></text>
+            <path id="Path_202" data-name="Path 202" d="M4918,706.3h84.67a3.4,3.4,0,0,0,3.368-3.71V688.263s.231-4.681-4.25-4.681H4922.8s-4.8-.622-4.8,5.291V706.3" transform="translate(-4670.04 5.141)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="1" stroke-dasharray="4"/>
+            <text id="XXXX-XXXX" transform="translate(257.469 705)" fill="#828282" font-size="13" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">XXXX-XXXX</tspan></text>
+            <text id="Your_Referral_Code_is" data-name="Your Referral Code is" transform="translate(241 680)" fill="#828282" font-size="9" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">Your Referral Code is</tspan></text>
+          </g>
+          <g id="Group_227" data-name="Group 227" transform="translate(-3)">
+            <g transform="matrix(1, 0, 0, 1, 7, 648.45)" filter="url(#Path_201-2)">
+              <path id="Path_201-4" data-name="Path 201" d="M6,0H329a5.777,5.777,0,0,1,6,5.524v98.506a5.777,5.777,0,0,1-6,5.524H6a5.777,5.777,0,0,1-6-5.524V5.524A5.777,5.777,0,0,1,6,0Z" transform="translate(9 6)" fill="#fff"/>
+            </g>
+            <g transform="matrix(1, 0, 0, 1, 7, 648.45)" filter="url(#Rectangle_43-2)">
+              <rect id="Rectangle_43-4" data-name="Rectangle 43" width="146" height="33" rx="7" transform="translate(192 75.55)" fill="url(#linear-gradient-3)"/>
+            </g>
+            <text id="REFER_NOW-3" data-name="REFER NOW" transform="translate(230 746)" fill="#fff" font-size="13" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">REFER NOW</tspan></text>
+            <path id="Path_202-2" data-name="Path 202" d="M4918,706.3h84.67a3.4,3.4,0,0,0,3.368-3.71V688.263s.231-4.681-4.25-4.681H4922.8s-4.8-.622-4.8,5.291V706.3" transform="translate(-4670.04 5.141)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="1" stroke-dasharray="4"/>
+            <text id="XXXX-XXXX-2" data-name="XXXX-XXXX" transform="translate(257.469 705)" fill="#828282" font-size="13" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">XXXX-XXXX</tspan></text>
+            <text id="Your_Referral_Code_is-2" data-name="Your Referral Code is" transform="translate(241 678)" fill="#828282" font-size="9" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">Your Referral Code is</tspan></text>
+            <path id="Path_208" data-name="Path 208" d="M5046.22,297.256l4.62,4.62-4.62,4.62" transform="translate(-4718.022 438.244)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          </g>
+        </g>
+        <path id="Path_2036" data-name="Path 2036" d="M4312.855,1662.6s-1.876,8.842,8.211,8.347,150.073-.247,150.073-.247,3.852-12.317-9.282-21.552-34.475-1.086-36.938-19.285,9.851-30.964-41.863-46.718-24.182-22.221-24.182-22.221h-3.906l-35.4,1.072s-6.559-.439-6.632,7.242S4312.855,1662.6,4312.855,1662.6Z" transform="translate(-4296 -744.49)" fill="#f5a3b9"/>
+        <g id="Group_1414" data-name="Group 1414" transform="translate(12.717 816.657)">
+          <path id="Path_2015" data-name="Path 2015" d="M4312.855,1662.576s-1.877,8.839,8.214,8.345,150.123-.247,150.123-.247,3.853-12.313-9.285-21.546-34.486-1.086-36.95-19.28,9.854-30.956-41.877-46.706-23.936-22.188-23.936-22.188l-16.7-.081-20.68.218s-8.752.469-8.826,8.148S4312.855,1662.576,4312.855,1662.576Z" transform="translate(-4312.717 -1561.119)" fill="url(#linear-gradient-4)"/>
+        </g>
+        <g id="Group_380" data-name="Group 380" transform="translate(159.777 860.034) rotate(-25)">
+          <g id="Group_379" data-name="Group 379" transform="translate(0 0)">
+            <g id="Group_378" data-name="Group 378" transform="translate(0 0)">
+              <path id="Path_184" data-name="Path 184" d="M1.7,0A1.924,1.924,0,0,0,0,2.087V5.564A1.924,1.924,0,0,0,1.7,7.651,1.924,1.924,0,0,0,3.4,5.564V2.087A1.924,1.924,0,0,0,1.7,0Z" transform="translate(6.626 0) rotate(60)" fill="#eb3c5c"/>
+              <path id="Path_293" data-name="Path 293" d="M1.7,0A1.875,1.875,0,0,0,0,2.009V5.358A1.875,1.875,0,0,0,1.7,7.368,1.875,1.875,0,0,0,3.4,5.358V2.009A1.875,1.875,0,0,0,1.7,0Z" transform="translate(9.028 10.78) rotate(89)" fill="#eb3c5c"/>
+              <path id="Path_294" data-name="Path 294" d="M1.7,0A1.924,1.924,0,0,0,0,2.087V5.564A1.924,1.924,0,0,0,1.7,7.651,1.924,1.924,0,0,0,3.4,5.564V2.087A1.924,1.924,0,0,0,1.7,0Z" transform="matrix(-0.454, 0.891, -0.891, -0.454, 9.425, 22.702)" fill="#eb3c5c"/>
+            </g>
+          </g>
+        </g>
+        <g id="megaphone" transform="translate(137.542 866.851) rotate(-2)">
+          <path id="Path_2038" data-name="Path 2038" d="M22.446,8.553C20.2,3.327,16.585-.654,14.756.09c-3.106,1.262,1.85,7.325-13.4,13.524-1.317.535-1.651,2.679-1.1,3.96s2.352,2.556,3.67,2.021c.228-.092,1.065-.362,1.065-.362.941,1.263,1.926.514,2.275,1.316.42.964,1.333,3.06,1.642,3.773s1.015,1.372,1.526,1.178l2.908-1.107a.96.96,0,0,0,.619-1.31c-.219-.5-1.116-.65-1.371-1.237s-1.092-2.467-1.332-3.06c-.327-.806.367-1.462,1.376-1.567,6.942-.723,8.239,3.564,10.6,2.6C25.065,19.078,24.692,13.779,22.446,8.553Zm-.782,8.479c-.406.165-3.138-1.99-4.884-6.053S15.254,3.2,15.66,3.038s3.07,2.434,4.816,6.5S22.071,16.866,21.664,17.031Z" transform="translate(0 0)" fill="#e94a55"/>
+        </g>
+      </g>
+      <g id="Group_1448" data-name="Group 1448" transform="translate(0 1)">
+        <g id="Group_1417" data-name="Group 1417" transform="translate(20 848)">
+          <text id="Refer_a_Friend_Earn_up_to" data-name="Refer a Friend &amp;
+Earn up to" transform="translate(0 11)" fill="#fff" font-size="11" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">Refer a Friend &amp;</tspan><tspan x="0" y="14">Earn up to</tspan></text>
+          <g id="Group_1416" data-name="Group 1416" transform="translate(0 27.989)">
+            <text id="_1000" data-name="1000" transform="translate(25.333 27)" fill="#fff" font-size="28" font-family="Montserrat-SemiBold, Montserrat" font-weight="600"><tspan x="0" y="0">1000</tspan></text>
+            <path id="Path_2034" data-name="Path 2034" d="M161.516,125.189H150.592a1.26,1.26,0,0,1,0-2.521h10.924a1.26,1.26,0,0,1,0,2.521Zm0,0" transform="translate(-149.332 -110.918)" fill="#fff"/>
+            <g id="Group_1415" data-name="Group 1415" transform="translate(0.001 11.75)">
+              <path id="Path_2033" data-name="Path 2033" d="M159.83,139.893a1.255,1.255,0,0,1-.709-.219l-9.243-6.3a1.261,1.261,0,0,1,.711-2.3h3.781a2.941,2.941,0,1,0,0-5.882h-3.781a1.26,1.26,0,0,1,0-2.521h3.781a5.461,5.461,0,0,1,.294,10.915l5.878,4.008a1.261,1.261,0,0,1-.713,2.3Zm0,0" transform="translate(-149.328 -122.668)" fill="#fff"/>
+              <path id="Path_2035" data-name="Path 2035" d="M160.623,183.668H150.5a1.168,1.168,0,0,1,0-2.336h10.123a1.168,1.168,0,1,1,0,2.336Zm0,0" transform="translate(-148.082 -177.176)" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+        <text id="_" data-name="*" transform="translate(117 887)" fill="#fff" font-size="13" font-family="Montserrat-SemiBold, Montserrat" font-weight="600"><tspan x="-5.408" y="0">*</tspan></text>
+      </g>
+      <text id="_Terms_Conditions_Apply" data-name="*Terms &amp; Conditions Apply" transform="translate(88 921)" fill="#fff" font-size="5" font-family="Montserrat-SemiBold, Montserrat" font-weight="600"><tspan x="-68.48" y="0">*Terms &amp; Conditions Apply</tspan></text>
+    </g>
+  </g>
+</svg>
