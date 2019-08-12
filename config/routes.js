@@ -1,6 +1,7 @@
 var home = require('../app/controllers/home');
 var notes = require('../app/controllers/notes');
 var images = require('../app/controllers/images');
+var links = require('../app/controllers/links');
 //you can include all your controllers
 
 module.exports = function (app, passport) {
@@ -21,4 +22,9 @@ module.exports = function (app, passport) {
     // app.get('/images/edit/:id',images.edit_images);
     // app.put('/images/edit/:id',images.update_images);
     // app.delete('/images/:id',images.delete_images);
+
+    //get,add,update and delete notes
+    app.get('/links',links.get_links);
+    app.post('/links',links.add_links);
+
 }
