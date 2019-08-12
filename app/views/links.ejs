@@ -13,7 +13,7 @@
 
    <body>
 
-     <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="margin:10px;">
+     <nav class="navbar navbar-expand-lg navbar-light bg-dark shadow" style="margin:10px;">
  <a class="navbar-brand " href="/"><strong style="color: white;">Rough</strong><i style="color:red;">Note</i></a>
  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
    <span class="navbar-toggler-icon"></span>
@@ -29,12 +29,51 @@
  </div>
 </nav>
      <div class="row">
-  <div class="col-8 bg-dark ">
+  <div class="col-8 bg-dark shadow ">
+    <table class="table table-dark responsive">
+      <thead>
+        <tr>
+          <th >#</th>
+          <th>Url</th>
+          <th >Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%var j = 0  %>
+        <% links.forEach(function(link){  j++ %>
+        <tr>
+          <td><%= j %></td>
+          <td>
+            <% for (var i = 0; i < link.url.length; i++) { %>
+                <tr>
+                  <td>  <a class="text-danger" target="blank" href=" <%= link.url[i]  %>"> <%= link.url[i]  %> </a></td>
+                  <td>
+                        <a href="/notes/edit/<%=link._id  %>" class="btn btn-success" >
+                             <i class="fa fa-copy" aria-hidden="true"></i></a></td>
+                </tr>
 
+            <% }  %>
+          </td>
+
+          <td> <a href="/notes/edit/<%=link._id  %>" class="btn btn-info">
+               <i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+               <td>
+                    <form action="/notes/<%=link._id %>?_method=DELETE" method="post">
+                            <button type="submit" class="btn btn-danger">
+                       <i class="fa fa-trash" aria-hidden="true"></i>
+                     </button>
+                     </form>
+                      </td>
+        </tr>
+        <%});  %>
+      </tbody>
+
+    </table>
 
   </div>
   <div class="col-4">
-    <div class="card" style="width: 18rem;">
+    <div class="card shadow" style="width: 18rem;">
    <div class="card-body">
    <h5 class="card-title"> Add Note</h5>
    <form class="" action="/links" method="post">
