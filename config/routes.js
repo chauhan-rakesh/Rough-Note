@@ -5,7 +5,7 @@ var links = require('../app/controllers/links');
 var apihome = require('../app/api/home');
 var apinotes = require('../app/api/notes');
 var apilinks = require('../app/api/links');
-var apiimages = require('/app/api/images');
+var apiimages = require('../app/api/images');
 //you can include all your controllers
 
 module.exports = function (app, passport) {
@@ -44,8 +44,8 @@ module.exports = function (app, passport) {
     app.get('/api/notes',apinotes.get_notes);
     app.post('/api/notes',apinotes.add_notes);
     app.get('/api/notes/edit/:id',apinotes.edit_notes);
-    app.put('/api/notes/edit/:id',apinotes.update_notes);
-    app.delete('/api/notes/:id',apinotes.delete_notes);
+    app.put('/api/notes/edit/:id',apinotes.update_note);
+    app.delete('/api/notes/:id',apinotes.delete_note);
 
     //images api
     app.get('/api/images',apiimages.get_images);

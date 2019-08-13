@@ -22,12 +22,14 @@ var msg = req.query.msg;
       var next = page+1;
       var previous = page-1;
 
-      res.render('notes',{
-        note: note,
-        msg : msg,
-        page:page,
-        next:next,
-        previous:previous
+      res.json({
+
+        "previous":previous,
+        "next":next,
+        "note": note,
+        "msg" : msg,
+        "page":page
+
       })
     });
 };
@@ -35,29 +37,34 @@ var msg = req.query.msg;
 exports.add_notes = (req,res)=>{
 
   var day =dateFormat(Date.now(), "yyyy-mm-dd HH:MM:ss");
+console.log(req.body === {});
+    if(req.body.content === undefined ){
+      res.status(400);
+      res.json({"error":"empty body"});
+    }else{
+      var newNotes =new Notes({
+        name: req.body.name,
+        content: req.body.content,
+        date: day
+      });
 
-  var newNotes =new Notes({
-    name: req.body.name,
-    content: req.body.content,
-    date: day
-  });
-
-  newNotes.save().then(savedNotes =>{
-    res.redirect('notes/?msg='+"Successfully Added");
-  }).catch(error =>{
-    console.log('could not save data'+ error);
-  });
-
-
+      newNotes.save().then(savedNotes =>{
+        res.json({"msg":"Successfully Added"});
+      }).catch(error =>{
+        res.status(500);
+        res.json({"error":"some eror occured"});
+        console.log('could not save data'+ error);
+      });
+    }
 };
 
 exports.edit_notes = (req,res,next)=>{
 
     Notes.findOne({_id: req.params.id}).then(note=>{
-        res.render('note_edit',{
-          note:note,
-          msg:undefined
-        });
+        res.status(200);
+        res.json({
+          "note":note
+        })
     });
 
 }
@@ -66,7 +73,7 @@ exports.update_note = (req,res,next)=>{
         note.name =  req.body.name;
         note.content = req.body.content;
         note.save(updatedNote =>{
-    res.redirect('/notes/?msg='+"Successfully Updated");
+    res.json({"msg": "Successfully Updated"});
   });
 });
 }
@@ -76,8 +83,10 @@ exports.delete_note = (req,res,next)=>{
 
 Notes.remove({_id: req.params.id})
 .then(result=>{
-
-        res.redirect('/notes/?msg='+"Successfully Deleted");
+      res.json({
+            "msg": "Successfully Deleted",
+            "deleted":true
+            });
       });
 
 
