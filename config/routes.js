@@ -26,5 +26,8 @@ module.exports = function (app, passport) {
     //get,add,update and delete notes
     app.get('/links',links.get_links);
     app.post('/links',links.add_links);
+    app.get('/links/:id',links.edit_links);
+    app.put('/links/edit/:id',links.update_links);
+    app.delete('/links/delete/:id',links.delete_links);
 
 }
