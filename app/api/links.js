@@ -7,9 +7,9 @@ var dateFormat = require('dateformat');
 exports.get_links = (req,res)=>{
     var msg = req.query.msg;
     Links.find({}).then(link=>{
-      res.render('links',{
-        links:link,
-        msg:msg
+      res.json({
+        "links":link,
+        "msg":msg
       });
     });
 
@@ -26,11 +26,12 @@ var newLinks =new Links({
 });
 
 newLinks.save().then(savedLinks =>{
-  res.redirect('links/?msg='+"Successfully Added");
+  res.json({"msg":"Successfully Added"});
 }).catch(error =>{
   console.log('could not save data'+ error);
+  res.status(400);
+  res.json({"error":"Some Error occured!"});
 });
-
 
 
 }
@@ -39,9 +40,9 @@ newLinks.save().then(savedLinks =>{
 exports.edit_links = (req,res,next)=>{
 
     Links.findOne({_id: req.params.id}).then(link=>{
-        res.render('links_edit',{
-          link:link,
-          msg:undefined
+        res.json({
+          "link":link,
+          "msg":undefined
         });
     });
 
@@ -50,7 +51,7 @@ exports.update_links = (req,res,next)=>{
   Links.findOne({_id: req.params.id}).then(link =>{
         link.url =  req.body.url;
         link.save(updatedLink =>{
-    res.redirect('/links/?msg='+"Successfully Updated");
+    res.json({"msg":"Successfully Updated"});
   });
 });
 }
@@ -61,7 +62,7 @@ exports.delete_links = (req,res,next)=>{
 Links.remove({_id: req.params.id})
 .then(result=>{
 
-        res.redirect('/links/?msg='+"Successfully Deleted");
+        res.json({"msg":"Successfully Deleted"});
       });
 
 
