@@ -5,9 +5,9 @@ var dateFormat = require('dateformat');
 exports.get_images = (req,res)=>{
   var msg = req.query.msg;
   Images.find({}).then(images=>{
-    res.render('images',{
-      images:images,
-      msg:msg
+    res.json({
+      "images":images,
+      "msg":msg
     });
   });
 
@@ -39,9 +39,12 @@ exports.add_images = (req,res)=>{
             });
 	          app.save(function(error){
 	            if(error){
+                res.json({"error": "Some error occured",
+                          "upload": false
+                          });
 	              throw error;
 	            }else{
-                res.redirect('/images/?msg=Successfully Uploaded')
+                res.json({"msg":"Successfully Uploaded"});
 
               }
 	         });
